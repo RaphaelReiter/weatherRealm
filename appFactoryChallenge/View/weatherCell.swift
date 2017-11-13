@@ -7,18 +7,16 @@
 //
 
 import UIKit
+import RealmSwift
 
 class weatherCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var cityName: UILabel!
+    @IBOutlet weak var temperatureLbl: UILabel!
+    
+    func configureCell(cityWeather: WeatherData) {
+        self.cityName.text = cityWeather.city
+        self.temperatureLbl.text = String(cityWeather.temperature)
+      
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

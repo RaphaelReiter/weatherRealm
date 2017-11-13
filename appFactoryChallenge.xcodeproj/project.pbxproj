@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6608E961FB8A4F600143AEE /* weatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6608E951FB8A4F600143AEE /* weatherCell.swift */; };
+		B6608E981FB8A50D00143AEE /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6608E971FB8A50D00143AEE /* WeatherData.swift */; };
+		B6608E9A1FB8A54800143AEE /* addCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6608E991FB8A54800143AEE /* addCityVC.swift */; };
 		B68784251FB8985B00878C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68784241FB8985B00878C59 /* AppDelegate.swift */; };
-		B68784271FB8985B00878C59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68784261FB8985B00878C59 /* ViewController.swift */; };
+		B68784271FB8985B00878C59 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68784261FB8985B00878C59 /* MainVC.swift */; };
 		B687842A1FB8985B00878C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68784281FB8985B00878C59 /* Main.storyboard */; };
 		B687842C1FB8985B00878C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B687842B1FB8985B00878C59 /* Assets.xcassets */; };
 		B687842F1FB8985B00878C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B687842D1FB8985B00878C59 /* LaunchScreen.storyboard */; };
+		C894000B1ADF13912C3A03A1 /* Pods_appFactoryChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C10E342741BEA671A77B989 /* Pods_appFactoryChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319F8FA8DBEBE8E0E4D83B74 /* Pods-appFactoryChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appFactoryChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appFactoryChallenge/Pods-appFactoryChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		5C10E342741BEA671A77B989 /* Pods_appFactoryChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appFactoryChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39B9FC7B95DF15775BCDEE4 /* Pods-appFactoryChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appFactoryChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-appFactoryChallenge/Pods-appFactoryChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B6608E951FB8A4F600143AEE /* weatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherCell.swift; sourceTree = "<group>"; };
+		B6608E971FB8A50D00143AEE /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		B6608E991FB8A54800143AEE /* addCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCityVC.swift; sourceTree = "<group>"; };
 		B68784211FB8985B00878C59 /* appFactoryChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appFactoryChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68784241FB8985B00878C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B68784261FB8985B00878C59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B68784261FB8985B00878C59 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B68784291FB8985B00878C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B687842B1FB8985B00878C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B687842E1FB8985B00878C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +39,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C894000B1ADF13912C3A03A1 /* Pods_appFactoryChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA38D8CA49C46C4ABCEE5135 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				319F8FA8DBEBE8E0E4D83B74 /* Pods-appFactoryChallenge.debug.xcconfig */,
+				B39B9FC7B95DF15775BCDEE4 /* Pods-appFactoryChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6608E911FB8A47100143AEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6608E971FB8A50D00143AEE /* WeatherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6608E921FB8A47800143AEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B68784261FB8985B00878C59 /* MainVC.swift */,
+				B6608E991FB8A54800143AEE /* addCityVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6608E941FB8A4DF00143AEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6608E951FB8A4F600143AEE /* weatherCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B68784181FB8985B00878C59 = {
 			isa = PBXGroup;
 			children = (
 				B68784231FB8985B00878C59 /* appFactoryChallenge */,
 				B68784221FB8985B00878C59 /* Products */,
+				AA38D8CA49C46C4ABCEE5135 /* Pods */,
+				BE6871952BECE07D21B683CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +101,24 @@
 		B68784231FB8985B00878C59 /* appFactoryChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B6608E941FB8A4DF00143AEE /* View */,
+				B6608E911FB8A47100143AEE /* Model */,
+				B6608E921FB8A47800143AEE /* Controller */,
 				B68784241FB8985B00878C59 /* AppDelegate.swift */,
-				B68784261FB8985B00878C59 /* ViewController.swift */,
 				B68784281FB8985B00878C59 /* Main.storyboard */,
 				B687842B1FB8985B00878C59 /* Assets.xcassets */,
 				B687842D1FB8985B00878C59 /* LaunchScreen.storyboard */,
 				B68784301FB8985B00878C59 /* Info.plist */,
 			);
 			path = appFactoryChallenge;
+			sourceTree = "<group>";
+		};
+		BE6871952BECE07D21B683CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C10E342741BEA671A77B989 /* Pods_appFactoryChallenge.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B68784331FB8985B00878C59 /* Build configuration list for PBXNativeTarget "appFactoryChallenge" */;
 			buildPhases = (
+				1026A7F66134DBD57A8B74C8 /* [CP] Check Pods Manifest.lock */,
 				B687841D1FB8985B00878C59 /* Sources */,
 				B687841E1FB8985B00878C59 /* Frameworks */,
 				B687841F1FB8985B00878C59 /* Resources */,
+				16F044BDAE5E2B47375A5FB9 /* [CP] Embed Pods Frameworks */,
+				B59AE382077038EC4D16D639 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +191,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1026A7F66134DBD57A8B74C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-appFactoryChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16F044BDAE5E2B47375A5FB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-appFactoryChallenge/Pods-appFactoryChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-appFactoryChallenge/Pods-appFactoryChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59AE382077038EC4D16D639 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-appFactoryChallenge/Pods-appFactoryChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B687841D1FB8985B00878C59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68784271FB8985B00878C59 /* ViewController.swift in Sources */,
+				B6608E961FB8A4F600143AEE /* weatherCell.swift in Sources */,
+				B68784271FB8985B00878C59 /* MainVC.swift in Sources */,
+				B6608E981FB8A50D00143AEE /* WeatherData.swift in Sources */,
+				B6608E9A1FB8A54800143AEE /* addCityVC.swift in Sources */,
 				B68784251FB8985B00878C59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +397,7 @@
 		};
 		B68784341FB8985B00878C59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319F8FA8DBEBE8E0E4D83B74 /* Pods-appFactoryChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +413,7 @@
 		};
 		B68784351FB8985B00878C59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B39B9FC7B95DF15775BCDEE4 /* Pods-appFactoryChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

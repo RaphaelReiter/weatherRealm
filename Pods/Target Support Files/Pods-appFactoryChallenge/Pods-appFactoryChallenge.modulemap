@@ -1,0 +1,6 @@
+framework module Pods_appFactoryChallenge {
+  umbrella header "Pods-appFactoryChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
